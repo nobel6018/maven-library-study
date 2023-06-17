@@ -28,16 +28,16 @@ application {
     mainClass.set("MainKt")
 }
 
-//publishing {
-//    publications {
-//        register("mavenJava", MavenPublication::class) {
-//            from(components["java"])
-//        }
-//    }
-//    repositories {
-//        maven {
-//            name = "MyRepo"
-//            url = uri("file://${buildDir}/repos")
-//        }
-//    }
-//}
+publishing {
+    publications {
+        register("mavenJava", MavenPublication::class) {
+            from(components["java"])
+        }
+    }
+    repositories {
+        maven {
+            name = "MyRepo"
+            url = uri("file://${buildDir}/repos")
+        }
+    }
+}
