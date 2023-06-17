@@ -34,10 +34,10 @@ publishing {
             from(components["java"])
         }
     }
-    repositories {
-        maven {
-            name = "MyRepo"
-            url = uri("file://${buildDir}/repos")
-        }
-    }
+//    repositories {
+//        maven {
+//            name = "MyRepo"
+//            url = uri("file://${buildDir}/repos")
+//        }
+//    }
 }
