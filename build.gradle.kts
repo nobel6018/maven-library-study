@@ -1,10 +1,11 @@
 plugins {
     kotlin("jvm") version "1.8.21"
+    id("maven-publish")
     application
 }
 
 group = "me.leedo"
-version = "1.0-SNAPSHOT"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -26,3 +27,17 @@ kotlin {
 application {
     mainClass.set("MainKt")
 }
+
+//publishing {
+//    publications {
+//        register("mavenJava", MavenPublication::class) {
+//            from(components["java"])
+//        }
+//    }
+//    repositories {
+//        maven {
+//            name = "MyRepo"
+//            url = uri("file://${buildDir}/repos")
+//        }
+//    }
+//}
